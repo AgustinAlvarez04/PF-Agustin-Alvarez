@@ -1,0 +1,5 @@
+@mixin footer($display,$direction){
+    background-color: $colorSecundario;
+    display: $display;
+    flex-direction: $direction;
+}

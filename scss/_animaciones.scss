@@ -1,0 +1,41 @@
+@keyframes animacionColor{
+    0%{background-color: white;}
+    25%{background-color: rgb(255, 172, 172);}
+    50%{background-color: rgb(255, 120, 120);}
+    75%{background-color: rgb(248, 78, 78);}
+    100%{background-color: rgb(255, 0, 0);}
+}
+
+@keyframes textAnimacion{
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+.scale:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.transform:hover{
+    transform: translate(50px 20px);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.animacion{
+    animation-name: animacion;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+h1{
+    animation-name: textAnimacion;
+    animation-duration: 5s;
+}
+
+nav div div ul li a{
+    animation-name: textAnimacion;
+    animation-duration: 5s;
+}

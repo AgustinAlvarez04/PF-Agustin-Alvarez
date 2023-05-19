@@ -1,0 +1,49 @@
+.nav-boostrap{
+    background-color: $colorSecundario;
+    text-decoration: none;
+}
+    .nav-boostrap img{
+        width: 200px;
+    }
+
+    .nav-boostrap li a{
+        color: $textoBlanco;
+        text-decoration: none;
+    }
+
+    .nav-boostrap:hover{
+        color: orangered;
+    }
+
+nav{
+    background-color: $colorSecundario;
+    background-position: 20%;
+    padding: 10px 60px;
+    height: auto;
+    position: sticky;
+    top: 0; 
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+    nav ul{
+        list-style: none;
+        display: flex;
+    }
+        nav ul li{
+            margin-right: 10px;
+        }
+            nav ul li a{
+                color: $textoBlanco;
+                text-align: right;
+                text-decoration: none;
+                font-family: 'Edu NSW ACT Foundation', cursive;
+                font-weight: 400;
+                line-height: 2;
+            }
+                nav ul li a:hover{
+                    text-decoration: underline;
+                    color: red;
+                }

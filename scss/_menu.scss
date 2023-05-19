@@ -1,0 +1,315 @@
+.menu-img{
+    width: 310px;
+    height: 310px;
+}
+.menu p{
+    color: white;
+}
+
+footer{
+    @include footer(flex,space-between)
+}
+
+.section-menu{
+    padding: 0 20px 30px 30px;
+}
+    .section-menu a{
+        color: rgb(134, 130, 132);
+        font-size: 1.3em;
+        text-decoration: none;
+        margin-bottom: 4px;
+        text-transform: lowercase;
+    }
+        .section-menu a:hover{
+            color: rgb(255, 136, 0);
+        }
+    .section-menu span{
+        display: block;
+        color: rgb(255, 255, 255);
+        margin: 10px 0;
+        letter-spacing: 1px;
+    }
+
+    .section-menu select{
+        color: rgb(255, 255, 255);
+        border: none;
+        background-color: rgb(230, 90, 25);
+        margin-bottom: 10px;
+        font-size: 1.4em;
+    }
+
+    .section-menu li{
+        padding-left: 10px;
+        list-style: none;
+    }
+
+.botones-menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.botones-menu button{
+    margin-left: 10px;
+    background-color: rgb(221, 107, 0);
+    color: rgb(0, 0, 0);
+    padding: 6px;
+    border: none;
+    border-radius: 3px;
+}
+
+.botones-menu input{
+    padding: 6px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(243, 245, 245);
+}
+
+.menu .h1-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns:20% repeat(2,1fr);
+    grid-template-rows: 80px repeat(4,300px);
+    gap: 5px;
+    grid-template-areas:
+    "h1 h1 botones"
+    "section uno uno"
+    "section dos dos"
+    "section tres tres"
+    "section cuatro cuatro";
+}
+    .menu .h1-menu{
+        grid-area: h1;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin: 10px;
+    }
+    .menu .botones-menu{
+        padding: 0 30px;
+        grid-area: botones;
+    }
+    
+    .menu .section-menu{
+        grid-area: section;
+    }
+
+    .menu .plato1{
+       grid-area: uno;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
+       
+    }  
+
+    .menu .plato1 p{
+        width: 50%;
+        margin-left: 50px;
+    }
+    .menu .plato2 p{
+        width: 50%;
+        margin-left: 50px;
+    }
+    .menu .plato3 p{
+        width: 50%;
+        margin-left: 50px;
+    }
+    .menu .plato4 p{
+        width: 50%;
+        margin-left: 50px;
+    }
+    .menu .plato2{
+        grid-area: dos;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .menu .plato3{
+       grid-area: tres;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       padding-top: 50px;
+    }
+
+    .menu .plato4{
+       grid-area: cuatro;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       padding-top: 70px;
+    }
+
+    .menu section{
+        border-radius: 10px;
+    }
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+@media (width < 768px){
+    .menu{
+        display: grid;
+        grid-template-columns:20% repeat(2,1fr);
+        grid-template-rows: 80px repeat(4,300px);
+        gap: 5px;
+        grid-template-areas:
+        "botones botones botones"
+        "uno uno uno"
+        "dos dos dos"
+        "tres tres tres"
+        "cuatro cuatro cuatro";
+    }
+        .menu .botones-menu{
+            grid-area: botones;
+        }
+        
+        .menu .section-menu{
+            display: none;
+        }
+
+        .menu .plato1{
+        grid-area: uno;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        padding-bottom: 30px;
+        width: 720px;
+        height: 350px;     
+        }  
+
+        .menu .p-platos p{
+            width: 50%;
+            margin-left: 50px;
+        }
+
+        .menu .plato2{
+            grid-area: dos;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            width: 700px;
+            height: 320px; 
+        }
+
+        .menu .plato3{
+        grid-area: tres;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        padding-top: 30px;
+        width: 700px;
+        height: 350px; 
+        }
+
+        .menu .plato4{
+        grid-area: cuatro;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        padding-top: 60px;
+        width: 720px;
+        height: 350px; 
+        }
+
+        .menu section{
+            border-radius: 10px;
+        }
+
+    .footer-menu{
+        margin-top: 150px;
+    }
+}
+
+@media (width < 480px){
+    .menu{
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: 20%;
+        gap:5px;
+        grid-template-areas:
+        "h1 h1 h1"
+        "plato1 p-platos p-platos"
+        "plato2 p-platos p-platos"
+        "plato3 p-platos p-platos"
+        "plato4 p-platos p-platos";
+    }
+        .menu .h1-menu{
+            grid-area: h1;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px;
+        }
+    
+        .menu .botones-menu,
+        .menu .section-menu{
+            display: none;
+        }
+
+        .menu .p-platos{
+            grid-area: p-platos;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .menu .plato1{
+            grid-area: plato1;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            width: 480px;
+            height: 250px; 
+        }
+
+        .menu .plato2{
+            grid-area: plato2;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding-top: 150px;
+            width: 480px;
+            height: 100px; 
+        }
+
+        .menu .plato3{
+            grid-area: plato3;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding-top: 290px;
+            
+            width: 480px;
+            height: 200px; 
+        }
+
+        .menu .plato4{
+            grid-area: plato4;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+            padding-top: 290px;
+            width: 480px;
+            height: 200px; 
+        } 
+    .footer-menu{
+        margin-top: 310px;
+    }
+}
+
