@@ -69,6 +69,11 @@ footer{
     background: linear-gradient(to right, rgb(255, 0, 0), rgba(255, 68, 0, 0.575));
 }
 
+.centrar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 a{
     color: white;
 
@@ -85,3 +90,8 @@ a{
         font-size:11px
     }
 }
+
+.mapa-chico{
+    width: 100vw;     
+}
+

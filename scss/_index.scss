@@ -1,6 +1,6 @@
 #intro{
     text-align: center;
-    background-color: $colorSecundario;
+    background-color: rgba(0, 0, 0, 0.452);
     padding: 10px 60px;
     height: auto;
 }
@@ -12,6 +12,7 @@ footer{
     @include footer(flex,space-between)
 }
 
+
 .header--img{
     display: grid;
     column-gap: 2.5px;
@@ -20,30 +21,64 @@ footer{
     grid-template-rows: repeat(1fr);
     grid-template-areas: 
     "pastas costilla pizza empanadas";
-}
+}   
     .pastas{
         grid-area: pastas;
-        width: 330px;
-        height: 330px;
+        width: 25vw;
+        height: 55vh;
     }  
 
     .costilla{
         grid-area: costilla;
-        width: 330px;
-        height: 330px;
+        width: 25vw;
+        height: 55vh;
     }
     
     .pizza{
         grid-area: pizza;
-        width: 330px;
-        height: 330px;
+        width: 25vw;
+        height: 55vh;
     }
     
     .empanadas{
         grid-area: empanadas;
-        width: 330px;
-        height: 330px;
+        width: 23vw;
+        height: 55vh;
     }
+
+.main-index{
+    display: grid;
+    column-gap: 4px;
+    justify-content: space-between;
+    grid-template-columns: repeat(2fr, 2fr, 2fr, 2fr);
+    grid-template-rows: repeat(2fr);
+    grid-template-areas:
+    "titulo titulo titulo titulo"
+    "apartado1 apartado3 apartado3 apartado2"
+    "video video video video";
+
+    .titulo-main{
+        grid-area: titulo;
+        margin-top: 10px;
+        padding-bottom: 30px;
+    }
+    .apartado1{
+        grid-area: apartado1;
+    }
+    .apartado2{
+        grid-area: apartado2;
+    }
+    .apartado3{
+        grid-area: apartado3;
+    }
+    .video-index{
+        grid-area: video;
+        padding-top: 70px;
+    }
+}
+
+
+
 
 @media (width < 768px){
     .header--img{
@@ -55,6 +90,7 @@ footer{
         "pastas costilla"
         "empanadas pizza";
     }
+
         .pastas{
             grid-area: pastas;
             display: flex;
@@ -120,7 +156,6 @@ footer{
 
 @media (width < 480px){
     .header--img{
-        background-image: url(../img/calden.jfif);
         background-repeat: no-repeat;
         margin-top: 10px;
         display: flex;
@@ -132,7 +167,8 @@ footer{
 
     .header--img .costilla,
     .header--img .empanadas,
-    .header--img .pastas,{
+    .header--img .pastas,
+    .header--img .pizza{
         display: none;
     }
-}
+}   
