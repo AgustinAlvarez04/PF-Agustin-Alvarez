@@ -5,15 +5,12 @@
     .nav-boostrap img{
         width: 200px;
     }
-
     .nav-boostrap li a{
-        color: $textoBlanco;
-        text-decoration: none;
+        color: $textoOrangered;
     }
-
-    .nav-boostrap:hover{
-        color: orangered;
-    }
+        .nav-boostrap li a:hover{
+            color: $textoBlanco;
+        }
 
 nav{
     background-color: $colorSecundario;

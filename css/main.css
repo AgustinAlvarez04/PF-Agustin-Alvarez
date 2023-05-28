@@ -63,12 +63,11 @@ nav div div ul li a {
 }
 
 .nav-boostrap li a {
-  color: white;
-  text-decoration: none;
+  color: orangered;
 }
 
-.nav-boostrap:hover {
-  color: orangered;
+.nav-boostrap li a:hover {
+  color: white;
 }
 
 nav {
@@ -680,6 +679,10 @@ footer {
   .botones-menu,
   .section-menu {
     display: none;
+  }
+  .h1-menu {
+    grid-area: h1;
+    font-size: 3em;
   }
   .plato1 {
     grid-area: uno;
