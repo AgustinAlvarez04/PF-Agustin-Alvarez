@@ -316,29 +316,32 @@ footer {
     justify-content: center;
   }
   .pastas {
-    width: 380px;
-    height: 330px;
-    margin-left: 250px;
+    width: 50vw;
+    height: 35vh;
+    margin: 0.6rem;
+    margin-left: 15.7rem;
   }
   .costilla {
-    width: 330px;
-    height: 330px;
-    margin-left: 250px;
-  }
-  .pizza {
-    width: 330px;
-    height: 330px;
-    margin-top: 250px;
-    margin-left: 250px;
+    width: 48vw;
+    height: 35vh;
+    margin: 10px;
+    margin-left: 14.9rem;
   }
   .empanadas {
-    width: 380px;
-    height: 330px;
-    margin-top: 250px;
-    margin-left: 250px;
+    width: 50vw;
+    height: 35vh;
+    margin: 10px;
+    margin-top: 20rem;
+    margin-left: 15.7rem;
+  }
+  .pizza {
+    width: 48vw;
+    height: 35vh;
+    margin: 10px;
+    margin-top: 20rem;
+    margin-left: 14.9rem;
   }
   .main-index {
-    grid-area: main;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -346,6 +349,7 @@ footer {
     margin-top: 10px;
     padding: 10px;
     border-radius: 4px;
+    margin-top: 1000px;
   }
 }
 @media (width < 480px) {
