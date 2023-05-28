@@ -84,13 +84,18 @@ a{
 
 @media (width < 480px){
     .titleContacto{
-        font-size: 20px;
+        font-size: 1.5em;
     }
     .textoContacto{
-        font-size:11px
+        font-size:0.9em;
     }
 }
 
+@media (width < 335px){
+    .textoContacto{
+        display: none;
+    }
+}
 .mapa-chico{
     width: 100vw;     
 }
