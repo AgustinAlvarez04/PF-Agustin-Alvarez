@@ -15,4 +15,4 @@ GitHub, GitHub Pages.
 ## Links:
 Link de GitHub Pages: https://agustinalvarez04.github.io/PF-Agustin-Alvarez/
 
-Link al servidor: http://elcalden-parrila-libre.rf.gd/index.html
+Link al servidor: http://elcalden-parrila-libre.rf.gd/
