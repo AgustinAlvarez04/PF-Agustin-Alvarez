@@ -206,6 +206,28 @@ a:hover {
   width: 100vw;
 }
 
+.error404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.error404-img {
+  margin-top: 2rem;
+  width: 40vw;
+  height: 60vh;
+  margin-bottom: 2rem;
+}
+
+.video-index {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 #intro {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.452);
