@@ -66,8 +66,12 @@ nav div div ul li a {
   color: orangered;
 }
 
-.nav-boostrap li a:hover {
+.nav-boostrap li a:visited {
   color: white;
+}
+
+.nav-boostrap li a:hover {
+  color: orangered;
 }
 
 nav {

@@ -8,8 +8,11 @@
     .nav-boostrap li a{
         color: $textoOrangered;
     }
-        .nav-boostrap li a:hover{
+        .nav-boostrap li a:visited{
             color: $textoBlanco;
+        }
+        .nav-boostrap li a:hover{
+            color: $textoOrangered
         }
 
 nav{
