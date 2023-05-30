@@ -168,62 +168,26 @@ footer{
 @media (width < 480px){
     .header--img{
         display: grid;
-        grid-template-columns:20% repeat(2,1fr);
-        grid-template-rows: 80px repeat(2,250px);
+        grid-template-columns:20% repeat;
+        grid-template-rows: 80px repeat;
         gap: 0.5px;
         grid-template-areas:
-        "pastas costilla"
-        "empanadas pizza";
+        "costilla ."
+        "costilla .";
     }
-        .pastas{
-            grid-area: pastas;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
         .costilla{
             grid-area: costilla;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            margin-left: 25rem;
+            width: 90vw;
+            height: 90vh;
         }
-
-        .empanadas{
-            grid-area: empanadas;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
+        .pastas,
+        .empanadas,
         .pizza{
-            grid-area: pizza;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .pastas{
-            margin-left: 10rem;
-            width: 50vw;
-            height: 50vh;
-        }
-        .costilla{
-            margin-left: 9.2rem;
-            width: 50vw;
-            height: 50vh;
-        }
-        .empanadas{
-            margin-top: 13rem;
-            margin-left: 10rem;
-            width: 50vw;
-            height: 50vh;
-        }
-        .pizza{
-            margin-top: 13rem;
-            margin-left: 9.2rem;
-            width: 50vw;
-            height: 50vh;
+            display: none;
         }
 
     .main-index{
@@ -232,6 +196,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         font-size: 3rem;
+        
     }
         .apartado1{
             display: flex;
