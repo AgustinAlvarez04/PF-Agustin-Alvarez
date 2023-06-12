@@ -110,8 +110,6 @@ a{
 
 .error404-img{
     margin-top: 2rem;
-    width: 40vw;
-    height: 60vh;
     margin-bottom: 2rem;
 }
 
@@ -120,4 +118,9 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+
+body{
+    overflow-x:hidden
 }
